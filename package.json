@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "cd packages/platform && react-app-rewired start",
+    "start:preview": "lerna --scope @video-editor-lerna/preview run start",
+    "start:platform": "lerna --scope @video-editor-lerna/platform run start"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
